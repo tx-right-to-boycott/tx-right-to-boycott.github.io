@@ -72,9 +72,9 @@ p {
   color: #484848;
 
   &>a {
-    text-decoration: none;
-    color: inherit;
-    border: none;
+    text-decoration: none !important;
+    color: #484848 !important;
+    border: none !important;
   }
 }
 
