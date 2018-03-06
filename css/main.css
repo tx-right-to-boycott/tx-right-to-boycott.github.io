@@ -167,9 +167,21 @@ ul.list > li {
 /* phone & tablets */
 @media screen and (min-width: 480px) and (max-width: 750px) {
   .title {
-    font-size: 3.5rem; } }
+    font-size: 3.5rem; }
+
+  .spotlight-container, .attention-container, .info-container, .appreciation-container {
+    flex-direction: column; }
+
+  .key-passage {
+    margin: 0; } }
 @media screen and (max-width: 750px) {
   .title-row {
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+
+  .spotlight-container, .attention-container, .info-container, .appreciation-container {
+    flex-direction: column; }
+
+  .key-passage {
+    margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */

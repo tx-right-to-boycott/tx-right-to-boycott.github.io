@@ -231,11 +231,27 @@ ul.list {
   .title {
     font-size: 3.5rem;
   }
+
+  .spotlight-container {
+    flex-direction: column;
+  }
+
+  .key-passage {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: $mobile-width-max) {
 
   .title-row {
     margin-bottom: 3rem;
+  }
+
+  .spotlight-container {
+    flex-direction: column;
+  }
+
+  .key-passage {
+    margin: 0;
   }
 }
