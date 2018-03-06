@@ -17,6 +17,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon {
+  padding-right: 0.5rem;
+  color: #2a2a2a; }
+
+.icon-old-phone:before {
+  content: "\e918"; }
+
+.icon-user:before {
+  content: "\e919"; }
+
+.icon-v-card:before {
+  content: "\e91a"; }
+
+.icon-video-camera:before {
+  content: "\e91b"; }
+
 .icon-emoji-happy:before {
   content: "\e900"; }
 
@@ -89,4 +105,4 @@
 .icon-warning:before {
   content: "\e917"; }
 
-/*# sourceMappingURL=fonts.css.map */
+/*# sourceMappingURL=icons.css.map */

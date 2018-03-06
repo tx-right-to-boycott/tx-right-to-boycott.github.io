@@ -22,6 +22,11 @@ body {
   flex-direction: row;
 }
 
+.align-in-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .align-left {
   display: flex;
   justify-content: flex-start;
@@ -152,6 +157,10 @@ ul.list {
 .spotlight-container {
   padding: 1rem 3rem;
   justify-content: center;
+  font-weight: bold;
+  font-size: 140%;
+  line-height: 140%;
+  letter-spacing: 0.02rem;
 }
 
 .spotlight-icon {

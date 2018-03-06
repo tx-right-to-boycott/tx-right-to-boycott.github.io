@@ -1,3 +1,5 @@
+@import "constants";
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?hchtuh');
@@ -24,6 +26,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon {
+  padding-right: 0.5rem;
+  color: $default-font-color;
+}
+
+.icon-old-phone:before {
+  content: "\e918";
+}
+.icon-user:before {
+  content: "\e919";
+}
+.icon-v-card:before {
+  content: "\e91a";
+}
+.icon-video-camera:before {
+  content: "\e91b";
+}
 .icon-emoji-happy:before {
   content: "\e900";
 }
