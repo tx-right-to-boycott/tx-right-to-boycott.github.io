@@ -164,7 +164,7 @@ ol {
   line-height: 140%;
   letter-spacing: 0.02rem; }
 
-.spotlight-icon, .attention-icon, .heart-icon, .appreciation-icon {
+.spotlight-icon, .attention-icon, .info-icon, .appreciation-icon {
   font-size: 500%;
   padding-bottom: 1rem;
   display: flex;
@@ -190,7 +190,7 @@ ol {
   border: 1px solid #f2faff;
   background-color: #f2faff; }
 
-.heart-icon {
+.info-icon {
   color: #009dff; }
 
 .appreciation-container {
