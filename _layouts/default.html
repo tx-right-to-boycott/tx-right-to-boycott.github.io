@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/dist/normalize.css">
+    <link rel="stylesheet" href="css/dist/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- TODO: favicon -->
+    <!-- TODO: SEO -->
+
+    <title>Right To Boycott | Texas</title>
+</head>
+
+<body>
+    <div id="body-container" class="container main-container">
+      <section class="header row">
+        <div class="title-row align-in-row centered-text">
+          <a href="#" class="nav-mobile"></a>
+          <span id="title" class="title">
+            Right to Boycott | Texas
+          </span>
+        </div>
+
+          <div class="navbar-spacer "></div>
+          <nav id="navbar" class="navbar">
+              <ul class="navbar-list">
+                {% if page.url == "/" %}
+                  <li class="navbar-item selected-page">
+                {% else %}
+                  <li class="navbar-item">
+                {% endif %}
+                      <a class="navbar-link" href="/">
+                        Home
+                      </a>
+                  </li>
+                  <li class="navbar-item">
+                      <span class="navbar-dropdown-link">Bills</span>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                          <a href="sb134.html">
+                            SB 134
+                          </a>
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="sb29.html">
+                            SB 29
+                          </a>
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="hb89.html">
+                            HB 89
+                          </a>
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="analysis.html">
+                            Analysis
+                          </a>
+                        </li>
+                      </ul>
+                  </li>
+                  {% if page.url == "/press.html" %}
+                    <li class="navbar-item selected-page">
+                  {% else %}
+                    <li class="navbar-item">
+                  {% endif %}
+                      <a class="navbar-link" href="press.html">
+                        Press
+                      </a>
+                  </li>
+                  {% if page.url == "/about-bds.html" %}
+                    <li class="navbar-item selected-page">
+                  {% else %}
+                    <li class="navbar-item">
+                  {% endif %}
+                      <a class="navbar-link" href="about-bds.html">
+                        About BDS
+                      </a>
+                  </li>
+
+                  {% if page.url == "/take-action.html" %}
+                    <li class="navbar-item selected-page">
+                  {% else %}
+                    <li class="navbar-item">
+                  {% endif %}
+                      <a class="navbar-link" href="take-action.html">
+                        Take Action!
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+      </section>
+
+        <section id="main" class="row main-body-container">
+            {{content}}
+        </section>
+
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

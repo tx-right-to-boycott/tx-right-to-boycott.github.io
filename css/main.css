@@ -238,7 +238,7 @@ h6 {
 }
 
 /* phone & tablets */
-@media (max-width: 750px) {
+@media (max-width: 40em) {
 
   .title {
     font-size: 3rem;
