@@ -115,15 +115,20 @@ h6 {
   font-size: 1.6rem;
 }
 
+.inset-block {
+  box-sizing: border-box;
+  padding: 2rem 5rem;
+  width: 80%;
+}
+
 .contact-card {
   @include round-corners($contact-card-border-radius);
   @extend div.buffered;
+  @extend .inset-block;
 
-  box-sizing: border-box;
-  // background-color: #f9f9f7; //sepia/yellow-y
-  background-color: #f2faff; //blue-y
-  // background-color: #f9fffa; //green-y
-  padding: 2rem 5rem;
+  background-color: #f2faff; //blue
+  // background-color: #f9f9f7; //sepia/yellow
+  // background-color: #f9fffa; //green
   letter-spacing: 0.01rem;
   width: 70%;
 
@@ -133,15 +138,15 @@ h6 {
 }
 
 ul.list {
-  padding: 0;
-  margin: 0;
-  list-style: circle !important;
 
   &>li {
     padding: inherit;
     margin: inherit;
-    list-style: inherit;
-    // content: "\2014\a0" !important;
+    display: block;
+
+    &::before {
+      content: "\2014\a0";
+    }
   }
 }
 

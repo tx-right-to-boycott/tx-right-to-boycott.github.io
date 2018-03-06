@@ -84,27 +84,28 @@ h6 {
   margin-bottom: 1rem;
   font-size: 1.6rem; }
 
+.inset-block, .contact-card {
+  box-sizing: border-box;
+  padding: 2rem 5rem;
+  width: 80%; }
+
 .contact-card {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   border-radius: 15px;
-  box-sizing: border-box;
   background-color: #f2faff;
-  padding: 2rem 5rem;
   letter-spacing: 0.01rem;
   width: 70%; }
   .contact-card .contact-name {
     font-weight: bold; }
 
-ul.list {
-  padding: 0;
-  margin: 0;
-  list-style: circle !important; }
-  ul.list > li {
-    padding: inherit;
-    margin: inherit;
-    list-style: inherit; }
+ul.list > li {
+  padding: inherit;
+  margin: inherit;
+  display: block; }
+  ul.list > li::before {
+    content: "\2014\a0"; }
 
 /* phone: small / portrait */
 @media screen and (max-width: 480px) {
