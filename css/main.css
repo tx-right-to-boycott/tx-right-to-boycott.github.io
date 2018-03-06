@@ -107,20 +107,49 @@ ul.list > li {
   ul.list > li::before {
     content: "\2014\a0"; }
 
+.spotlight-container, .attention-container, .info-container, .appreciation-container {
+  padding: 1rem 3rem;
+  justify-content: center; }
+
+.spotlight-icon, .attention-icon, .heart-icon, .appreciation-icon {
+  font-size: 500%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .attention-container {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   border-radius: 15px;
   border: 1px solid #ffdca0;
-  background-color: #ffeac6;
-  padding: 1rem 3rem;
-  justify-content: center; }
+  background-color: #ffeac6; }
 
 .attention-icon {
-  color: #ffad21;
-  font-size: 500%;
-  padding: 1rem; }
+  color: #ffad21; }
+
+.info-container {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #f2faff;
+  background-color: #f2faff; }
+
+.heart-icon {
+  color: #009dff; }
+
+.appreciation-container {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #fff2fd;
+  background-color: #fff2fd; }
+
+.appreciation-icon {
+  color: #fc00d5; }
 
 /* phone: small / portrait */
 @media screen and (max-width: 480px) {

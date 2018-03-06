@@ -126,9 +126,8 @@ h6 {
   @extend div.buffered;
   @extend .inset-block;
 
-  background-color: #f2faff; //blue
-  // background-color: #f9f9f7; //sepia/yellow
-  // background-color: #f9fffa; //green
+  background-color: $info-bg-color;
+
   letter-spacing: 0.01rem;
   width: 70%;
 
@@ -150,18 +149,59 @@ ul.list {
   }
 }
 
-.attention-container {
-  @include round-corners($default-rounded-corner-border-radius);
-  border: 1px solid $warning-border-color;
-  background-color: $warning-bg-color;
+.spotlight-container {
   padding: 1rem 3rem;
   justify-content: center;
 }
 
-.attention-icon {
-  color: $warning-text-color;
+.spotlight-icon {
   font-size: 500%;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attention-container {
+  @include round-corners($default-rounded-corner-border-radius);
+  @extend .spotlight-container;
+
+  border: 1px solid $warning-border-color;
+  background-color: $warning-bg-color;
+}
+
+.attention-icon {
+  @extend .spotlight-icon;
+
+  color: $warning-icon-color;
+}
+
+.info-container {
+  @include round-corners($default-rounded-corner-border-radius);
+  @extend .spotlight-container;
+
+  border: 1px solid $info-border-color;
+  background-color: $info-bg-color;
+}
+
+.heart-icon {
+  @extend .spotlight-icon;
+
+  color: $info-icon-color;
+}
+
+.appreciation-container {
+  @include round-corners($default-rounded-corner-border-radius);
+  @extend .spotlight-container;
+
+  border: 1px solid $appreciation-border-color;
+  background-color: $appreciation-bg-color;
+}
+
+.appreciation-icon {
+  @extend .spotlight-icon;
+
+  color: $appreciation-icon-color;
 }
 
 
