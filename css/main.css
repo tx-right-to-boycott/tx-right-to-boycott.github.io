@@ -112,7 +112,7 @@ ul.list > li {
     content: "\2014\a0"; }
 
 .spotlight-container, .attention-container, .info-container, .appreciation-container {
-  padding: 1rem 3rem;
+  padding: 1rem 3rem 2.5rem;
   justify-content: center;
   font-weight: bold;
   font-size: 140%;
@@ -121,7 +121,7 @@ ul.list > li {
 
 .spotlight-icon, .attention-icon, .heart-icon, .appreciation-icon {
   font-size: 500%;
-  padding: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center; }
