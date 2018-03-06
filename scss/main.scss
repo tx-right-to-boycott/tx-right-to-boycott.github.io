@@ -5,6 +5,11 @@ body {
   color: $default-text-color;
 }
 
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
 .displayed {
   display: block !important;
 }
@@ -142,6 +147,12 @@ h6 {
   width: 80%;
 }
 
+.quote {
+  @extend .inset-block;
+
+  font-style: italic;
+}
+
 .contact-card {
   @include round-corners($default-rounded-corner-border-radius);
   @extend div.buffered;
@@ -157,7 +168,8 @@ h6 {
   }
 }
 
-ul.list {
+ul.list,
+ul.list-bullet {
 
   &>li {
     padding: inherit;
@@ -167,6 +179,42 @@ ul.list {
     &::before {
       content: "\2014\a0";
     }
+  }
+
+  ul {
+    font-size: 100%;
+    text-indent: 3rem;
+  }
+}
+
+ul.list-bullet {
+
+  &>li {
+    display: flex;
+    margin: auto;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: "\2022";
+      margin-right: 0.4rem;
+    }
+
+    &>a {
+      display: inline;
+    }
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+ol {
+  margin: 2rem 0;
+
+  li {
+    text-indent: -1em;
+    padding-left: 1em;
   }
 }
 

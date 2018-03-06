@@ -23,7 +23,7 @@ nav {
      display: none !important;
   }
 
-  ul {
+  ul.navbar-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -46,7 +46,7 @@ nav {
         color: #8e8e8e;
       }
 
-      & ul {
+      &ul {
         @include default-transitions($default-transition-time);
 
         display: none;

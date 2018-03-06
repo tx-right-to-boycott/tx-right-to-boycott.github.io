@@ -1,6 +1,10 @@
 body {
   color: #2a2a2a; }
 
+em {
+  font-weight: bold;
+  font-style: normal; }
+
 .displayed {
   display: block !important; }
 
@@ -98,10 +102,13 @@ h6 {
   margin-bottom: 1rem;
   font-size: 1.6rem; }
 
-.inset-block, .contact-card {
+.inset-block, .quote, .contact-card {
   box-sizing: border-box;
   padding: 2rem 5rem;
   width: 80%; }
+
+.quote {
+  font-style: italic; }
 
 .contact-card {
   -webkit-border-radius: 15px;
@@ -114,12 +121,36 @@ h6 {
   .contact-card .contact-name {
     font-weight: bold; }
 
-ul.list > li {
+ul.list > li,
+ul.list-bullet > li {
   padding: inherit;
   margin: inherit;
   display: block; }
-  ul.list > li::before {
+  ul.list > li::before,
+  ul.list-bullet > li::before {
     content: "\2014\a0"; }
+ul.list ul,
+ul.list-bullet ul {
+  font-size: 100%;
+  text-indent: 3rem; }
+
+ul.list-bullet > li {
+  display: flex;
+  margin: auto;
+  margin-bottom: 1rem; }
+  ul.list-bullet > li::before {
+    content: "\2022";
+    margin-right: 0.4rem; }
+  ul.list-bullet > li > a {
+    display: inline; }
+ul.list-bullet ul {
+  margin-bottom: 0; }
+
+ol {
+  margin: 2rem 0; }
+  ol li {
+    text-indent: -1em;
+    padding-left: 1em; }
 
 .spotlight-container, .attention-container, .info-container, .appreciation-container, .date-container {
   padding: 1rem 3rem 2.5rem;

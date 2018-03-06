@@ -18,25 +18,25 @@ nav {
   #mm-navbar {
     display: none !important; }
 
-  ul {
+  ul.navbar-list {
     list-style: none;
     padding: 0;
     margin: 0; }
-    ul li {
+    ul.navbar-list li {
       -webkit-transition: opacity 0.2s;
       -moz-transition: opacity 0.2s;
       -ms-transition: opacity 0.2s;
       display: block;
       position: relative;
       display: flex; }
-      ul li:hover {
+      ul.navbar-list li:hover {
         height: 100%; }
-      ul li a {
+      ul.navbar-list li a {
         display: block;
         text-decoration: none;
         white-space: nowrap;
         color: #8e8e8e; }
-      ul li ul {
+      ul.navbar-list liul {
         -webkit-transition: opacity 0.2s;
         -moz-transition: opacity 0.2s;
         -ms-transition: opacity 0.2s;
