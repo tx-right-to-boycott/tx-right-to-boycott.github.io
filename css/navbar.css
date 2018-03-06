@@ -14,7 +14,7 @@ nav {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px; }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 751px) {
   #mm-navbar {
     display: none !important; }
 
@@ -124,7 +124,7 @@ nav {
     display: flex;
     width: 50%; } }
 /* phone & tablets */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
   #navbar {
     display: none !important; }
 
