@@ -167,6 +167,7 @@ p {
   min-width: 100%;
   max-width: 100%;
   width: 100%;
+  margin-top: 4rem;
 }
 
 .title {
@@ -197,9 +198,6 @@ h6 {
 
 /* phone */
 @media (max-width: 550px) {
-  .header {
-    margin-top: 4rem;
-  }
 }
 
 
