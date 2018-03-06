@@ -16,7 +16,7 @@ nav {
 }
 
 .nav-mobile {
-  display:none; /* Hide from browsers that don't support media queries */
+  display: none; /* Hide from browsers that don't support media queries */
   cursor:pointer;
   background:#fff url(../images/menu.svg) no-repeat center center;
   height: 2rem;
@@ -25,13 +25,6 @@ nav {
   border-radius:5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
-}
-
-.menu-icon {
-	display: none;
-	width: 2rem;
-	height: 2rem;
-	background: #fff url(../images/menu.svg) center;
 }
 
 .main-container {
