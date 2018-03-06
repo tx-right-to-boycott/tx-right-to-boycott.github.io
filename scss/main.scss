@@ -96,11 +96,18 @@ h6 {
   font-size: 1.6rem;
 }
 
-/* phone & tablets */
-@media screen and (max-width: $max-mobile-width) {
-
+/* phone: small / portrait */
+@media screen and (max-width: $mobile-width-small) {
   .title {
     font-size: 2.5rem;
+  }
+}
+
+/* phone & tablets */
+@media screen and (min-width: $mobile-width-small) and (max-width: $mobile-width-max) {
+
+  .title {
+    font-size: 3.5rem;
   }
 
   .title-row {
