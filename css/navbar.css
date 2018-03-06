@@ -122,7 +122,15 @@ nav {
     position: relative;
     vertical-align: middle;
     display: flex;
-    width: 50%; } }
+    width: 50%; }
+
+  nav > ul::before {
+    margin-left: -50%;
+    right: 3rem; }
+
+  nav > ul::after {
+    margin-right: -50%;
+    left: 3rem; } }
 /* phone & tablets */
 @media screen and (max-width: 750px) {
   #navbar {

@@ -152,6 +152,16 @@ nav {
       display: flex;
       width: $navbar-wing-width;
   }
+
+  nav>ul::before {
+    margin-left: -50%;
+    right: 3rem;
+  }
+
+  nav>ul::after {
+    margin-right: -50%;
+    left: 3rem;
+  }
 }
 
 /* phone & tablets */
