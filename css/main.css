@@ -110,7 +110,16 @@ ul.list > li {
 /* phone: small / portrait */
 @media screen and (max-width: 480px) {
   .title {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+
+  .contact-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .contact-card {
+    width: 90%; } }
 /* phone & tablets */
 @media screen and (min-width: 480px) and (max-width: 750px) {
   .title {
