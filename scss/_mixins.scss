@@ -1,0 +1,7 @@
+@import "constants";
+
+@mixin default-transitions($transition-time) {
+  -webkit-transition: opacity $transition-time;
+  -moz-transition: opacity $transition-time;
+  -ms-transition: opacity $transition-time;
+}

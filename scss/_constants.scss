@@ -1,0 +1,19 @@
+$max-mobile-width: 640px;
+
+$default-font-color: #2a2a2a;
+$default-background-color: #fff;
+$default-transition-time: 0.2s;
+
+$navbar-wing-color: #d0d0d0;
+$navbar-wing-width: 50%;
+
+$navbar-selected-page-background-color: #f6f6f6;
+$navbar-selected-page-text-color: #484848;
+
+$navbar-selected-page-hover-background-color: $navbar-selected-page-background-color;
+
+$navbar-mobile-background-color: #484848;
+$navbar-mobile-text-color: #aeaeae;
+
+$navbar-mobile-hover-background-color: $navbar-mobile-text-color;
+$navbar-mobile-hover-text-color: $navbar-mobile-background-color;

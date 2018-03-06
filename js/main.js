@@ -79,14 +79,17 @@
       }
     };
 
-    submenuNavLink.onclick = function() {
+    submenuNavLink.onclick = function(event) {
+
+      event.stopPropagation();
+      event.preventDefault();
 
       topLevelNavItems.forEach(function(item) {
         hideElement(item);
       });
 
       hideElement(submenuNavLink);
-      showElement(submenuNav);
+      displayElement(submenuNav);
 
       submenuNavItems.forEach(function(item) {
         displayElement(item);
@@ -95,7 +98,9 @@
       showElement(submenuNavBackLink);
     }
 
-    submenuNavBackLink.onclick = function() {
+    submenuNavBackLink.onclick = function(event) {
+      event.stopPropagation();
+      event.preventDefault();
       setUpInitialMenuState();
     }
 })();
