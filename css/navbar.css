@@ -93,8 +93,8 @@ nav {
       color: #484848; }
 
   .dropdown-menu {
-    position: absolute;
-    margin-left: -1.5rem;
+    position: relative;
+    right: 0;
     width: 100%;
     font-size: 80%; }
 
