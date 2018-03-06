@@ -51,6 +51,10 @@ em {
   display: flex;
   justify-content: flex-end; }
 
+.centered-body, #main {
+  display: flex;
+  justify-content: center; }
+
 .centered-text, h1,
 h3 {
   display: flex;
@@ -124,7 +128,7 @@ h6 {
 ul.list > li,
 ul.list-bullet > li {
   padding: inherit;
-  margin: inherit;
+  margin: 0;
   display: block; }
   ul.list > li::before,
   ul.list-bullet > li::before {

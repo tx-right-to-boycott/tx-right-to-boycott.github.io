@@ -1,6 +1,10 @@
 @import "constants";
 @import "mixins";
 
+#main {
+  @extend .centered-body;
+}
+
 body {
   color: $default-text-color;
 }
@@ -72,6 +76,11 @@ em {
 .align-right {
   display: flex;
   justify-content: flex-end;
+}
+
+.centered-body {
+  display: flex;
+  justify-content: center;
 }
 
 .centered-text {
@@ -173,7 +182,7 @@ ul.list-bullet {
 
   &>li {
     padding: inherit;
-    margin: inherit;
+    margin: 0;
     display: block;
 
     &::before {
