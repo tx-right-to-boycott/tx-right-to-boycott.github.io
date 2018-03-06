@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/dist/normalize.css">
     <link rel="stylesheet" href="css/dist/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
     <!-- TODO: favicon -->
     <!-- TODO: SEO -->
@@ -28,9 +29,9 @@
           <nav id="navbar" class="navbar">
               <ul class="navbar-list">
                 {% if page.url == "/" %}
-                  <li class="navbar-item selected-page">
+                  <li class="navbar-item top-nav-only selected-page">
                 {% else %}
-                  <li class="navbar-item">
+                  <li class="navbar-item top-nav-only">
                 {% endif %}
                       <a class="navbar-link" href="/">
                         Home
@@ -38,6 +39,8 @@
                   </li>
                   <li class="navbar-item">
                       <span class="navbar-dropdown-link">Bills</span>
+                      <span class="navbar-mobile-dropdown-link hidden">Bills</span>
+                      <span class="navbar-mobile-dropdown-back-link hidden">Back</span>
                       <ul class="dropdown-menu">
                         <li class="dropdown-item">
                           <a href="sb134.html">
@@ -62,18 +65,18 @@
                       </ul>
                   </li>
                   {% if page.url == "/press.html" %}
-                    <li class="navbar-item selected-page">
+                    <li class="navbar-item top-nav-only selected-page">
                   {% else %}
-                    <li class="navbar-item">
+                    <li class="navbar-item top-nav-only">
                   {% endif %}
                       <a class="navbar-link" href="press.html">
                         Press
                       </a>
                   </li>
                   {% if page.url == "/about-bds.html" %}
-                    <li class="navbar-item selected-page">
+                    <li class="navbar-item top-nav-only selected-page">
                   {% else %}
-                    <li class="navbar-item">
+                    <li class="navbar-item top-nav-only">
                   {% endif %}
                       <a class="navbar-link" href="about-bds.html">
                         About BDS
@@ -81,9 +84,9 @@
                   </li>
 
                   {% if page.url == "/take-action.html" %}
-                    <li class="navbar-item selected-page">
+                    <li class="navbar-item top-nav-only selected-page">
                   {% else %}
-                    <li class="navbar-item">
+                    <li class="navbar-item top-nav-only">
                   {% endif %}
                       <a class="navbar-link" href="take-action.html">
                         Take Action!
