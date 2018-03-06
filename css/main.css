@@ -16,10 +16,20 @@ nav {
   flex-direction: row;
 }
 
+.align-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .centered-text {
   display: flex;
-  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 ul {
@@ -181,6 +191,10 @@ p {
 
 section.buffered {
   margin-top: 6rem;
+}
+
+div.buffered {
+  margin-top: 2rem;
 }
 
 h4 {
