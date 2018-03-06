@@ -2,8 +2,14 @@ $mobile-width-small: 480px;
 $mobile-width-max: 750px;
 
 $default-text-color: #2a2a2a;
-$default-background-color: #fff;
+$default-background-color: #ffffff;
 $default-transition-time: 0.2s;
+
+$date-text-color: #484848;
+
+$call-to-action-text-color: #ffffff;
+$call-to-action-bg-color: #009dff;
+$call-to-action-bg-hover-color: #2d7eff;
 
 $navbar-wing-color: #d0d0d0;
 $navbar-wing-width: 50%;
@@ -39,6 +45,8 @@ $appreciation-border-color: #fff2fd;
 $facebook-blue: #3b5998;
 
 $default-rounded-corner-border-radius: 15px;
+
+$default-drop-shadow-color: #484848;
 
 // background-color: #f9f9f7; //sepia/yellow
 // background-color: #f9fffa; //green

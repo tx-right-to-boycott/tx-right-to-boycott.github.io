@@ -76,23 +76,6 @@ body {
   align-items: center;
 }
 
-.action {
-  background-color: #75e583;
-  border: 2px solid #75e583;
-  box-shadow: 5px 5px 5px #888888;
-  border-radius: 4px;
-
-  &:hover {
-    background-color: #2ea03d;
-    border: 2px solid #2ea03d;
-    box-shadow: 5px 5px 5px #888888;
-
-    &>a {
-      background: none;
-    }
-  }
-}
-
 p {
   width: 100%;
 }
@@ -135,6 +118,7 @@ div.buffered {
   margin-top: 2rem;
 }
 
+h1,
 h3 {
   @extend .centered-text;
 }
@@ -243,6 +227,45 @@ ul.list {
   @extend .spotlight-icon;
 
   color: $appreciation-icon-color;
+}
+
+.date {
+  color: $date-text-color;
+  font-size: 70%;
+  border-bottom: 1px dotted;
+
+  &-container {
+    @extend .spotlight-container;
+
+    font-weight: normal;
+    padding-bottom: 1rem;
+  }
+}
+
+.button-call-to-action-container {
+  margin: 2rem 0;
+  background-color: $call-to-action-bg-color;
+
+  &:first-of-type {
+    margin-top: 4rem;
+  }
+
+  &:hover {
+    background-color: $call-to-action-bg-hover-color;
+    // box-shadow: 3px 3px 3px $default-drop-shadow-color;
+  }
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.button-call-to-action {
+  font-weight: bold;
+  font-size: 2.1vw;
+  width: 90%;
+  padding: 2rem 4rem;
+  color: $call-to-action-text-color;
 }
 
 

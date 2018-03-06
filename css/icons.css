@@ -17,9 +17,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon {
+.icon, .icon-call-to-action {
   padding-right: 0.5rem;
   color: #2a2a2a; }
+
+.icon-call-to-action {
+  padding-right: 2rem; }
 
 .facebook {
   color: #3b5998; }

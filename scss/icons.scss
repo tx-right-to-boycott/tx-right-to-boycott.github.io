@@ -31,6 +31,12 @@
   color: $default-text-color;
 }
 
+.icon-call-to-action {
+  @extend .icon;
+  
+  padding-right: 2rem;
+}
+
 .facebook {
   color: $facebook-blue;
 }

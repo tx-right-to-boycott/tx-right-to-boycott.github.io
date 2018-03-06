@@ -6,7 +6,7 @@ nav {
   display: none;
   /* Hide from browsers that don't support media queries */
   cursor: pointer;
-  background: #fff url(../images/menu.svg) no-repeat center center;
+  background: #ffffff url(../images/menu.svg) no-repeat center center;
   height: 3rem;
   width: 3rem;
   margin-right: 2rem;
@@ -41,7 +41,7 @@ nav {
         -moz-transition: opacity 0.2s;
         -ms-transition: opacity 0.2s;
         display: none;
-        background-color: #fff;
+        background-color: #ffffff;
         margin-top: 3.7rem;
         text-transform: none; }
 
@@ -50,7 +50,7 @@ nav {
     -moz-transition: opacity 0.2s;
     -ms-transition: opacity 0.2s;
     display: none;
-    background-color: #fff;
+    background-color: #ffffff;
     margin-top: 3.7rem;
     text-transform: none; }
 

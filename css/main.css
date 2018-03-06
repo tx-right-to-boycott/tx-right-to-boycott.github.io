@@ -47,23 +47,12 @@ body {
   display: flex;
   justify-content: flex-end; }
 
-.centered-text, h3 {
+.centered-text, h1,
+h3 {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center; }
-
-.action {
-  background-color: #75e583;
-  border: 2px solid #75e583;
-  box-shadow: 5px 5px 5px #888888;
-  border-radius: 4px; }
-  .action:hover {
-    background-color: #2ea03d;
-    border: 2px solid #2ea03d;
-    box-shadow: 5px 5px 5px #888888; }
-    .action:hover > a {
-      background: none; }
 
 p {
   width: 100%; }
@@ -132,7 +121,7 @@ ul.list > li {
   ul.list > li::before {
     content: "\2014\a0"; }
 
-.spotlight-container, .attention-container, .info-container, .appreciation-container {
+.spotlight-container, .attention-container, .info-container, .appreciation-container, .date-container {
   padding: 1rem 3rem 2.5rem;
   justify-content: center;
   font-weight: bold;
@@ -180,6 +169,32 @@ ul.list > li {
 .appreciation-icon {
   color: #db20bc; }
 
+.date {
+  color: #484848;
+  font-size: 70%;
+  border-bottom: 1px dotted; }
+  .date-container {
+    font-weight: normal;
+    padding-bottom: 1rem; }
+
+.button-call-to-action-container {
+  margin: 2rem 0;
+  background-color: #009dff; }
+  .button-call-to-action-container:first-of-type {
+    margin-top: 4rem; }
+  .button-call-to-action-container:hover {
+    background-color: #2d7eff; }
+
+.button-link {
+  text-decoration: none; }
+
+.button-call-to-action {
+  font-weight: bold;
+  font-size: 2.1vw;
+  width: 90%;
+  padding: 2rem 4rem;
+  color: #ffffff; }
+
 /* phone: small / portrait */
 @media screen and (max-width: 480px) {
   .title {
@@ -201,7 +216,7 @@ ul.list > li {
   .title-row {
     margin-bottom: 3rem; }
 
-  .spotlight-container, .attention-container, .info-container, .appreciation-container {
+  .spotlight-container, .attention-container, .info-container, .appreciation-container, .date-container {
     font-size: 100%; }
 
   .key-passage {
