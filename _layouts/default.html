@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/dist/normalize.css">
     <link rel="stylesheet" href="css/dist/skeleton.css">
+    <link rel="stylesheet" href="css/dist/jquery.mmenu.all.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
 
@@ -22,7 +23,7 @@
     <div id="body-container" class="container main-container">
       <section class="header row">
         <div class="title-row align-in-row centered-text">
-          <a href="#" class="nav-mobile"></a>
+          <a id="mobile-menu-icon" class="mobile-menu-icon" href="#navbar"></a>
           <span id="title" class="title">
             Right to Boycott | Texas
           </span>
@@ -45,12 +46,12 @@
                         <!-- <a href="">Bills</a> -->
                         Bills
                       </span>
-                      <span class="navbar-mobile-dropdown-link hidden">
-                        <a href="">Bills ></a>
-                      </span>
-                      <span class="navbar-mobile-dropdown-back-link hidden">
-                        <a href="">< Back</a>
-                      </span>
+                      <!-- <span class="navbar-mobile-dropdown-link hidden"> -->
+                        <!-- <a href="">Bills ></a> -->
+                      <!-- </span> -->
+                      <!-- <span class="navbar-mobile-dropdown-back-link hidden"> -->
+                        <!-- <a href="">< Back</a> -->
+                      <!-- </span> -->
                       <ul class="dropdown-menu">
                         <li class="dropdown-item">
                           <a href="sb134.html">
@@ -111,6 +112,18 @@
         </section>
 
     </div>
-    <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="/js/dist/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/js/dist/jquery.mmenu.all.min.js"></script>
+
+    <script type="text/javascript">
+     $(document).ready(function() {
+        $("#navbar").mmenu({}, {
+          clone: true
+        });
+     });
+   </script>
+
+    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
