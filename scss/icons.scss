@@ -28,9 +28,16 @@
 
 .icon {
   padding-right: 0.5rem;
-  color: $default-font-color;
+  color: $default-text-color;
 }
 
+.facebook {
+  color: $facebook-blue;
+}
+
+.icon-mail:before {
+  content: "\e91c";
+}
 .icon-old-phone:before {
   content: "\e918";
 }

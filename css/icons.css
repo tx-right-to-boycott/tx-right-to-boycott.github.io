@@ -21,6 +21,12 @@
   padding-right: 0.5rem;
   color: #2a2a2a; }
 
+.facebook {
+  color: #3b5998; }
+
+.icon-mail:before {
+  content: "\e91c"; }
+
 .icon-old-phone:before {
   content: "\e918"; }
 

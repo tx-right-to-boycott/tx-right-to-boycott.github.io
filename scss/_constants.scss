@@ -1,7 +1,7 @@
 $mobile-width-small: 480px;
 $mobile-width-max: 750px;
 
-$default-font-color: #2a2a2a;
+$default-text-color: #2a2a2a;
 $default-background-color: #fff;
 $default-transition-time: 0.2s;
 
@@ -19,6 +19,9 @@ $navbar-mobile-text-color: #aeaeae;
 $navbar-mobile-hover-background-color: $navbar-mobile-text-color;
 $navbar-mobile-hover-text-color: $navbar-mobile-background-color;
 
+$footer-text-color: #aeaeae;
+$footer-border-color: #aeaeae;
+
 $warning-text-color: #ffad21;
 $warning-icon-color: #ffad21;
 $warning-bg-color: #ffeac6;
@@ -32,6 +35,8 @@ $info-border-color: #f2faff;
 $appreciation-icon-color: #db20bc;
 $appreciation-bg-color: #fff2fd;
 $appreciation-border-color: #fff2fd;
+
+$facebook-blue: #3b5998;
 
 $default-rounded-corner-border-radius: 15px;
 
