@@ -1,4 +1,4 @@
 _site/
 .sass-cache/
 css/bak/
-css/*.map
+css/*.css.map
