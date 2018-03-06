@@ -7,6 +7,33 @@ nav {
   margin-bottom: 5rem;
 }
 
+.displayed {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-mobile {
+  display:none; /* Hide from browsers that don't support media queries */
+  cursor:pointer;
+  background:#fff url(../images/menu.svg) no-repeat center center;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 2rem;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+}
+
+.menu-icon {
+	display: none;
+	width: 2rem;
+	height: 2rem;
+	background: #fff url(../images/menu.svg) center;
+}
+
 .main-container {
   margin-bottom: 10rem;
 }
@@ -84,10 +111,9 @@ li li {
 }
 
 .navbar-item>ul>li {
-  padding: none;
   line-height: normal;
-  margin: 0;
   letter-spacing: normal;
+  margin: 0;
 }
 
 .navbar-item {
@@ -104,6 +130,13 @@ li li {
 .navbar-link:hover {
   color: #484848;
   background-color: #f6f6f6;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .selected-page {
@@ -211,11 +244,77 @@ h6 {
   font-size: 1.6rem;
 }
 
-/* phone */
-@media (max-width: 550px) {
-}
-
-
-/* phone to tablet */
+/* phone & tablets */
 @media (max-width: 750px) {
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .title-row {
+    margin-bottom: 3rem;
+  }
+
+  nav {
+    width:100%;
+    display: none;
+  }
+
+  nav>ul::before,
+  nav>ul::after {
+      background: none;
+  }
+
+  .navbar {
+    background-color: #484848;
+  }
+
+  .dropdown-menu,
+  .dropdown-item {
+    display: block;
+    background-color: #484848;
+    width: inherit;
+  }
+
+  .dropdown-menu {
+    margin-left: -80%;
+    margin-right: 7%;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-item {
+    width: inherit;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .selected-page {
+    background: none;
+  }
+
+  .navbar-item,
+  .navbar-link,
+  .selected-page>a,
+  .dropdown-item>a {
+    color: #aeaeae;
+    margin-left: 4%;
+  }
+
+  .navbar-dropdown-link {
+    margin-left: 4%;
+  }
+
+  .navbar-item:hover,
+  .dropdown-item:hover {
+    background-color: #e8e8e8;
+  }
 }
