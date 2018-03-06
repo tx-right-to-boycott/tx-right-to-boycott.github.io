@@ -1,4 +1,5 @@
 @import "constants";
+@import "mixins";
 
 body {
   color: $default-font-color;
@@ -75,12 +76,24 @@ p {
   font-weight: bold;
 }
 
+.key-passage {
+  font-weight: bold;
+  font-size: 140%;
+  line-height: 130%;
+  letter-spacing: 0.02rem;
+  margin: 4rem 0;
+}
+
 section.buffered {
   margin-top: 6rem;
 }
 
 div.buffered {
   margin-top: 2rem;
+}
+
+h3 {
+  @extend .centered-text;
 }
 
 h4 {
@@ -94,6 +107,36 @@ h6 {
   letter-spacing: 0.01rem;
   margin-bottom: 1rem;
   font-size: 1.6rem;
+}
+
+.contact-card {
+  @include round-corners($contact-card-border-radius);
+  @extend div.buffered;
+
+  box-sizing: border-box;
+  // background-color: #f9f9f7; //sepia/yellow-y
+  background-color: #f2faff; //blue-y
+  // background-color: #f9fffa; //green-y
+  padding: 2rem 5rem;
+  letter-spacing: 0.01rem;
+  width: 70%;
+
+  .contact-name {
+    font-weight: bold;
+  }
+}
+
+ul.list {
+  padding: 0;
+  margin: 0;
+  list-style: circle !important;
+
+  &>li {
+    padding: inherit;
+    margin: inherit;
+    list-style: inherit;
+    // content: "\2014\a0" !important;
+  }
 }
 
 /* phone: small / portrait */

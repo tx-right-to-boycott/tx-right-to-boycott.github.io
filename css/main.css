@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: flex-end; }
 
-.centered-text {
+.centered-text, h3 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -56,10 +56,17 @@ p {
 .keyword {
   font-weight: bold; }
 
+.key-passage {
+  font-weight: bold;
+  font-size: 140%;
+  line-height: 130%;
+  letter-spacing: 0.02rem;
+  margin: 4rem 0; }
+
 section.buffered {
   margin-top: 6rem; }
 
-div.buffered {
+div.buffered, .contact-card {
   margin-top: 2rem; }
 
 h4 {
@@ -72,6 +79,28 @@ h6 {
   letter-spacing: 0.01rem;
   margin-bottom: 1rem;
   font-size: 1.6rem; }
+
+.contact-card {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #f2faff;
+  padding: 2rem 5rem;
+  letter-spacing: 0.01rem;
+  width: 70%; }
+  .contact-card .contact-name {
+    font-weight: bold; }
+
+ul.list {
+  padding: 0;
+  margin: 0;
+  list-style: circle !important; }
+  ul.list > li {
+    padding: inherit;
+    margin: inherit;
+    list-style: inherit; }
 
 /* phone: small / portrait */
 @media screen and (max-width: 480px) {
