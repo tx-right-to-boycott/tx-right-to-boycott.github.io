@@ -107,6 +107,21 @@ ul.list > li {
   ul.list > li::before {
     content: "\2014\a0"; }
 
+.attention-container {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #ffdca0;
+  background-color: #ffeac6;
+  padding: 1rem 3rem;
+  justify-content: center; }
+
+.attention-icon {
+  color: #ffad21;
+  font-size: 500%;
+  padding: 1rem; }
+
 /* phone: small / portrait */
 @media screen and (max-width: 480px) {
   .title {
