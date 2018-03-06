@@ -33,7 +33,7 @@
 
 .icon-call-to-action {
   @extend .icon;
-  
+
   padding-right: 2rem;
 }
 
@@ -41,6 +41,48 @@
   color: $facebook-blue;
 }
 
+.icon-archive:before {
+  content: "\e91d";
+}
+.icon-documents:before {
+  content: "\e91e";
+}
+.icon-list:before {
+  content: "\e91f";
+}
+.icon-emoji-sad:before {
+  content: "\e920";
+}
+.icon-block:before {
+  content: "\e921";
+}
+.icon-circle-with-cross:before {
+  content: "\e922";
+}
+.icon-check:before {
+  content: "\e923";
+}
+.icon-clipboard:before {
+  content: "\e924";
+}
+.icon-hand:before {
+  content: "\e925";
+}
+.icon-camera:before {
+  content: "\e926";
+}
+.icon-bell:before {
+  content: "\e927";
+}
+.icon-attachment:before {
+  content: "\e928";
+}
+.icon-map:before {
+  content: "\e929";
+}
+.icon-phone:before {
+  content: "\e92a";
+}
 .icon-mail:before {
   content: "\e91c";
 }
